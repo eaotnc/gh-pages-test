@@ -5,6 +5,7 @@ import { Button } from 'antd';
 import './App.css'
 import 'antd/dist/antd.css'; 
 import Sky from './sky'
+import { hot } from 'react-hot-loader'
 class App extends Component {
   state = {
     color: "#ffc600",
