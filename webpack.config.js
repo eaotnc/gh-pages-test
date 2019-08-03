@@ -15,14 +15,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel',
-          query: {
-            presets: ['es2015', 'stage-0', 'react']
+          loader: 'babel-loader',
+          options: {
+            presets: ['babel-preset-env', 'babel-preset-react'],
           },
-          // options: {
-          //   presets: ['babel-preset-env', 'babel-preset-react'],
-          //   plugins: ["react-hot-loader/babel"],
-          // },
         },
       },
       {

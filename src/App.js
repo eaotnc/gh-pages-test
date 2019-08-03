@@ -7,14 +7,18 @@ import 'antd/dist/antd.css';
 import Sky from './sky'
 import { hot } from 'react-hot-loader'
 class App extends Component {
-  state = {
-    color: "#ffc600",
-    width: 400,
-    height: 350,
-    brushRadius: 3,
-    lazyRadius: 5,
-    savedPictureList:[],
-  };
+  constructor() {
+    super();
+    this.state = {
+      color: "#ffc600",
+      width: 400,
+      height: 350,
+      brushRadius: 3,
+      lazyRadius: 5,
+      savedPictureList:[],
+    };
+  }
+ 
 
   async componentDidMount(){
     try {
